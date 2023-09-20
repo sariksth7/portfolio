@@ -11,6 +11,16 @@
    ================================================== -->
     <meta charset="utf-8">
     <title>Santosh Shrestha</title>
+    <style>
+        /* CSS for the animation */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        #greeting {
+            animation: fadeIn 2s ease-in-out;
+        }
+    </style>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -46,7 +56,8 @@
                 <a class="menu-toggle" href="#"><span>Menu</span></a>
 
                 <div class="logo">
-                    <a href="index.html">santosh</a22		      </div>		      
+                    <a href="index.html">Lol</a>
+                </div>		      
 
 		   	<nav id="main-nav-wrap">
 					<ul class="main-navigation">
@@ -78,7 +89,7 @@
 
                 <div class="col-twelve">
 
-                    <h5>Hello, World.</h5>
+                    <h5 id="greeting" style="display: none;">Hello, World.</h5>
                     <h1>I'm Santosh Shresth.</h1>
 
                     <p class="intro-position">
@@ -86,7 +97,7 @@
                         <span>SEO Analyst</span>
                     </p>
 
-                    <a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
+                    <a class="button stroke smoothscroll" href="#about" title="" id="decodeButton">Decode My Profile</a>
 
                 </div>
 
@@ -109,6 +120,8 @@
 
     <!-- about section
    ================================================== -->
+
+   <div id="scrambledContent">
     <section id="about">
 
         <div class="row section-intro">
@@ -121,7 +134,7 @@
 
                     <img src="images/profile.jpg" alt="Profile Picture">
 
-                    <p class="lead">Lorem ipsum Exercitation culpa qui dolor consequat exercitation fugiat laborum ex ea eiusmod ad do aliqua occaecat nisi ad irure sunt id pariatur Duis laboris amet exercitation veniam labore consectetur ea id quis eiusmod.</p>
+                    <p class="lead">As an accomplished backend software engineer and Laravel specialist, I excel in crafting efficient web solutions and guiding teams to achieve strategic objectives. My commitment to precision in code and a knack for harnessing emerging technologies enable me to transform your projects creatively and professionally.</p>
                 </div>
 
             </div>
@@ -133,7 +146,7 @@
             <div class="col-six tab-full">
 
                 <h3>Profile</h3>
-                <p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>
+                <p>Backend software engineer and Laravel specialist, dedicated to crafting efficient web solutions and driving innovation through code precision and technology.</p>
 
                 <ul class="info-list">
                     <li>
@@ -165,28 +178,36 @@
             <div class="col-six tab-full">
 
                 <h3>Skills</h3>
-                <p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>
+                <p></p>
 
                 <ul class="skill-bars">
                     <li>
-                        <div class="progress percent90"><span>90%</span></div>
+                        <div class="progress percent25"></div>
+                        <strong>Laravel</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent50"></div>
+                        <strong>Node JS</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent75"></div>
                         <strong>HTML5</strong>
                     </li>
                     <li>
-                        <div class="progress percent85"><span>85%</span></div>
+                        <div class="progress percent100"></div>
                         <strong>CSS3</strong>
                     </li>
                     <li>
-                        <div class="progress percent70"><span>70%</span></div>
+                        <div class="progress percent75"></div>
                         <strong>JQuery</strong>
                     </li>
                     <li>
-                        <div class="progress percent95"><span>95%</span></div>
+                        <div class="progress percent50"></div>
                         <strong>PHP</strong>
                     </li>
                     <li>
 
-                        <div class="progress percent75"><span>75%</span></div>
+                        <div class="progress percent25"></div>
                         <strong>Wordpress</strong>
                     </li>
 
@@ -200,7 +221,7 @@
         <div class="row button-section">
             <div class="col-twelve">
                 <a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
-                <a href="#" title="Download CV" class="button button-primary">Download CV</a>
+                <a href="images/my-resume/Santosh-Shrestha-cv-resume.pdf" title="Download CV" class="button button-primary" download>Download CV</a>
             </div>
         </div>
 
@@ -218,7 +239,7 @@
                 <h5>Resume</h5>
                 <h1>More of my credentials.</h1>
 
-                <p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+                <p class="lead">Further substantiating my qualifications, I bring forth a rich tapestry of accomplishments and expertise, underscoring my commitment to excellence in every facet of my professional journey.</p>
 
             </div>
         </div>
@@ -240,18 +261,17 @@
                     <div class="timeline-block">
 
                         <div class="timeline-ico">
-                            <i class="fa fa-graduation-cap"></i>
+                            <i class="fa fa-briefcase"></i>
                         </div>
 
                         <div class="timeline-header">
-                            <h3>UI Designer</h3>
-                            <p>July 2015 - Present</p>
+                            <h3>Software Engineer & Asst. Project Manager</h3>
+                            <p>January 2023 - Present</p>
                         </div>
 
                         <div class="timeline-content">
-                            <h4>Awesome Studio</h4>
-                            <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor
-                                incididunt amet est occaecat nisi.</p>
+                            <h4>Smartpalika Pvt. Ltd.</h4>
+                            <p>Thapathali, Kathmandu</p>
                         </div>
 
                     </div>
@@ -260,18 +280,17 @@
                     <div class="timeline-block">
 
                         <div class="timeline-ico">
-                            <i class="fa fa-graduation-cap"></i>
+                            <i class="fa fa-briefcase"></i>
                         </div>
 
                         <div class="timeline-header">
-                            <h3>Front-end Developer</h3>
-                            <p>July 2014 - June 2015</p>
+                            <h3>Software Engineer Backend</h3>
+                            <p>June 2021 - December 2022</p>
                         </div>
 
                         <div class="timeline-content">
-                            <h4>Super Cool Agency</h4>
-                            <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor
-                                incididunt amet est occaecat nisi incididunt.</p>
+                            <h4>Smartpalika Pvt. Ltd.</h4>
+                            <p>Thapathali, Kathmandu</p>
                         </div>
 
                     </div>
@@ -280,18 +299,36 @@
                     <div class="timeline-block">
 
                         <div class="timeline-ico">
-                            <i class="fa fa-graduation-cap"></i>
+                            <i class="fa fa-briefcase"></i>
                         </div>
 
                         <div class="timeline-header">
-                            <h3>Web Designer</h3>
-                            <p>May 2013 - June 2014</p>
+                            <h3>Backend Internship Trainee</h3>
+                            <p>March 2021 - May 2021</p>
                         </div>
 
                         <div class="timeline-content">
-                            <h4>Great Designs Studio</h4>
-                            <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor
-                                incididunt amet est occaecat nisi incididunt.</p>
+                            <h4>Smartpalika Pvt. Ltd.</h4>
+                            <p>Thapathali, Kathmandu</p>
+                        </div>
+
+                    </div>
+                    <!-- /timeline-block -->
+
+                    <div class="timeline-block">
+
+                        <div class="timeline-ico">
+                            <i class="fa fa-briefcase"></i>
+                        </div>
+
+                        <div class="timeline-header">
+                            <h3>Digital Marketing And SEO Manager</h3>
+                            <p>September 2017 - January 2023</p>
+                        </div>
+
+                        <div class="timeline-content">
+                            <h4>Himalayan Scenery Treks & Expedition Pvt. Ltd.</h4>
+                            <p>Thamel, Kathmandu</p>
                         </div>
 
                     </div>
@@ -322,18 +359,35 @@
                     <div class="timeline-block">
 
                         <div class="timeline-ico">
-                            <i class="fa fa-briefcase"></i>
+                            <i class="fa fa-graduation-cap"></i>
                         </div>
 
                         <div class="timeline-header">
-                            <h3>Master Degree</h3>
-                            <p>July 2015 - Present</p>
+                            <h3>Bachelors in IT</h3>
+                            <p>September 2019 - September 2020</p>
                         </div>
 
                         <div class="timeline-content">
-                            <h4>University of Life</h4>
-                            <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor
-                                incididunt amet est occaecat nisi.</p>
+                            <h4>The British College aff. Leeds Beckett Univeristy</h4>
+                            <p>Thapathali, Kathmandu</p>
+                        </div>
+
+                    </div>
+
+                    <div class="timeline-block">
+
+                        <div class="timeline-ico">
+                            <i class="fa fa-graduation-cap"></i>
+                        </div>
+
+                        <div class="timeline-header">
+                            <h3>Bsc. Hons IT</h3>
+                            <p>May 2017 - August 2019</p>
+                        </div>
+
+                        <div class="timeline-content">
+                            <h4>International School of Management & Technology</h4>
+                            <p>Gairigaun, Tinkune, Kathmandu</p>
                         </div>
 
                     </div>
@@ -342,18 +396,17 @@
                     <div class="timeline-block">
 
                         <div class="timeline-ico">
-                            <i class="fa fa-briefcase"></i>
+                            <i class="fa fa-graduation-cap"></i>
                         </div>
 
                         <div class="timeline-header">
-                            <h3>Bachelor Degree</h3>
-                            <p>July 2014 - June 2015</p>
+                            <h3>Higher Secondary Degree</h3>
+                            <p>May 2014 - November 2016</p>
                         </div>
 
                         <div class="timeline-content">
-                            <h4>State Design University</h4>
-                            <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor
-                                incididunt amet est occaecat nisi incididunt.</p>
+                            <h4>Capital College And Research Center</h4>
+                            <p>Balkumari, Kathmandu</p>
                         </div>
 
                     </div>
@@ -362,18 +415,175 @@
                     <div class="timeline-block">
 
                         <div class="timeline-ico">
-                            <i class="fa fa-briefcase"></i>
+                            <i class="fa fa-graduation-cap"></i>
                         </div>
 
                         <div class="timeline-header">
-                            <h3>Bachelor Degree</h3>
-                            <p>May 2013 - June 2014</p>
+                            <h3>School Leaving Certificate</h3>
+                            <p>March 2014 - April 2015</p>
                         </div>
 
                         <div class="timeline-content">
-                            <h4>Design College</h4>
-                            <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor
-                                incididunt amet est occaecat nisi incididunt.</p>
+                            <h4>Precious Public English School</h4>
+                            <p>Balkot, Bhaktapur</p>
+                        </div>
+
+                    </div>
+                    <!-- /timeline-block -->
+
+                </div>
+                <!-- /timeline-wrap -->
+
+            </div>
+            <!-- /col-twelve -->
+
+        </div>
+        <!-- /resume-timeline -->
+
+        <div class="row resume-timeline">
+
+            <div class="col-twelve resume-header">
+
+                <h2>Projects</h2>
+
+            </div>
+            <!-- /resume-header -->
+
+            <div class="col-twelve">
+
+                <div class="timeline-wrap">
+
+                    <div class="timeline-block">
+
+                        <div class="timeline-ico">
+                            <i class="fa fa-tasks"></i>
+                        </div>
+
+                        <div class="timeline-header">
+                             <h3>Smartpalika Pvt. Ltd.</h3>
+                            <!--<p>September 2019 - September 2020</p> -->
+                        </div>
+
+                        <div class="timeline-content">
+                            <h4>Kathmandu Metro, Bagchaur, Suddhodhan, Siddhicharan, Waling, Tarakeshwor, Changunarayan, Banepa, Halesi Tuwachung, Banepa, Koshi, Sakela, Khijidemba</h4>
+                            <p><ul>
+                                <li>Managed the overall projects, overseeing tasks, timelines, and resources.</li>
+                                <li>Communicated with clients to understand requirements, provide updates, and address concerns.</li>
+                                <li>Prioritized tasks and assignments to optimize productivity and meet project objectives.</li>
+                                <li>Implemented authentication and authorization mechanisms.</li>
+                                <li>Managed user authentication, roles, and permissions.</li>
+                                <li>Ensured only authorized users accessed sensitive data and performed specific actions.</li>
+                                <li>Developed the Sifarish system for streamlined suggestions and improvements submission.</li>
+                                <li>Integrated the Shangrilla System for revenue management, ensuring smooth communication and operation.</li>
+                                <li>Successfully integrated a payment gateway for convenient online payments.</li>
+                                <li>Created the Darta, Chalani, and Tippani system for transparent record-keeping and reporting.</li>
+                                <li>Led the development of the Esuggestion Portal, facilitating stakeholder collaboration.</li>
+                                <li>Identified and resolved issues within chat modules, enhancing communication.</li>
+                                <li>Collaborated with cross-functional teams and stakeholders for project success.</li>
+                                <li>Created a RESTful API to facilitate communication with the mobile app, enhancing user experience and functionality.</li>
+                                <li>Led the development of the Local Government Profile, enabling eficient management of government-related information.</li>
+                                <li>Contributed to the creation of the Digital Profile, digitizing and centralizing crucial project data for easy access and analysis.</li>
+
+                            </ul></p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="timeline-block">
+
+                        <div class="timeline-ico">
+                            <i class="fa fa-tasks"></i>
+                        </div>
+
+                        <div class="timeline-header">
+                             <h3>CellApp Pvt. Ltd.</h3>
+                              <!--<p>May 2017 - August 2019</p> -->
+                        </div>
+
+                        <div class="timeline-content">
+                            <h4>Kirana Pasal</h4>
+                            <p><ul>
+                                <li>Developed APIs for mobile app communication with a server.</li>
+                                <li>Implemented endpoints for retrieving product information, order history, and customer data.</li>
+                                <li>Handled authentication and authorization mechanisms for secure data exchange.</li>
+                                <li>Ensured data integrity and validation in API requests and responses.</li>
+                                <li>Integrated push notification services (e.g., Firebase Cloud Messaging) for real-time communication.</li>
+                                <li>Developed a scheduling system to send notifications at optimal times.</li>
+                                <li>Integrated ePayment gateways (like Esewa) to enable digital payments for customers.</li>
+                                <li>Implemented CRUD (Create, Read, Update, Delete) operations for managing product inventory.</li>
+                                <li>Implemented search and filter functionality to help customers and specific items.</li>
+                            </ul></p>
+                        </div>
+
+                    </div>
+                    <!-- /timeline-block -->
+
+                    <div class="timeline-block">
+
+                        <div class="timeline-ico">
+                            <i class="fa fa-tasks"></i>
+                        </div>
+
+                        <div class="timeline-header">
+                           <h3>CellApp Pvt. Ltd.</h3>
+                             <!-- <p>May 2014 - November 2016</p> -->
+                        </div>
+
+                        <div class="timeline-content">
+                            <h4>Federalism Glossary</h4>
+                            <p>
+                                <ul>
+                                <li>Created a set of APIs to facilitate communication between the mobile application and the backend server.</li>
+                                <li>Designed endpoints for fetching glossary terms, definitions, and other relevant data for display in the app.</li>
+                                <li>Ensured API responses are well-structured and optimized for mobile app consumption.</li>
+                                <li>Integrated Firebase authentication into the frontend to provide a secure and reliable user authentication system.</li>
+                                <li>Developed a user-friendly CMS for managing glossary content.</li>
+                                <li>Enabled content creators to add, edit, and delete glossary terms and definitions through a web interface.</li>
+                                <li>Designed a feature that generates a "Keyword of the Day" to highlight a specific glossary term each day.</li>
+                                <li>Implemented a scheduling mechanism to automatically update the "Keyword of the Day" at a specific time each day.</li>
+                                <li>Ensured that the scheduled change occurs seamlessly without manual intervention.</li>
+                                <li>Designed and implemented a feature that allows users to bookmark or save their favorite glossary words for quick access.</li>
+                                <li>Created endpoints and mechanisms to manage a user's list of bookmarked words in the backend.</li>
+                                <li>Ensured that bookmarked words are associated with the user's account and accessible across devices.</li>
+                                <li>Implemented robust error handling mechanisms to provide meaningful error messages to the mobile app in case of failures.</li>
+                                <li>Set up logging to track system activities and diagnose issues for troubleshooting.</li>
+                                <li>Worked closely with frontend developers, mobile app developers, and other team members to ensure smooth integration of backend functionalities.</li>
+                                <li>Communicated effectively to understand requirements and provide updates on backend development progress.</li>
+                            </ul>
+                            </p>
+                        </div>
+
+                    </div>
+                    <!-- /timeline-block -->
+
+                    <div class="timeline-block">
+
+                        <div class="timeline-ico">
+                            <i class="fa fa-tasks"></i>
+                        </div>
+
+                        <div class="timeline-header">
+                            <h3>CellApp Pvt. Ltd</h3>
+                            <!--  <p>March 2014 - April 2015</p> -->
+                        </div>
+
+                        <div class="timeline-content">
+                            <h4>Civil ERP</h4>
+                            <p><ul>
+                                <li>Developed a system to securely store financial data and documents.</li>
+                                <li>Designed a structured database for managing financial records, invoices, and receipts.</li>
+                                <li>Created RESTful APIs to support the web application's functionality.</li>
+                                <li>Designed API endpoints and implemented data retrieval and manipulation operations.</li>
+                                <li>Ensured APIs were efficient, reliable, and well-documented.</li>
+                                <li>Implemented authentication and authorization mechanisms.</li>
+                                <li>Managed user authentication, roles, and permissions.</li>
+                                <li>Ensured only authorized users accessed sensitive data and performed specific actions.</li>
+                                <li>Developed APIs to enable project reporting for a mobile application.</li>
+                                <li>Designed APIs for retrieving project-specific data and generating relevant reports.</li>
+                                <li>Managed data related to procurement processes.</li>
+                                <li>Implemented the conversion of successful procurement bids into actual projects.</li>
+                            </ul></p>
                         </div>
 
                     </div>
@@ -394,7 +604,7 @@
 
     <!-- Portfolio Section
    ================================================== -->
-    <section id="portfolio">
+    <!-- <section id="portfolio">
 
         <div class="row section-intro">
             <div class="col-twelve">
@@ -405,15 +615,15 @@
                 <p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
 
             </div>
-        </div>
+        </div> -->
         <!-- /section-intro-->
 
-        <div class="row portfolio-content">
+        <!-- <div class="row portfolio-content">
 
-            <div class="col-twelve">
+            <div class="col-twelve"> -->
 
                 <!-- portfolio-wrapper -->
-                <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+                <!-- <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
 
                     <div class="bgrid folio-item">
                         <div class="item-wrap">
@@ -429,10 +639,10 @@
                                 </div>
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- /folio-item -->
 
-                    <div class="bgrid folio-item">
+                    <!-- <div class="bgrid folio-item">
                         <div class="item-wrap">
                             <img src="images/portfolio/shutterbug.jpg" alt="Shutterbug">
                             <a href="#modal-02" class="overlay">
@@ -446,10 +656,10 @@
                                 </div>
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- /folio-item -->
 
-                    <div class="bgrid folio-item">
+                    <!-- <div class="bgrid folio-item">
                         <div class="item-wrap">
                             <img src="images/portfolio/clouds.jpg" alt="Clouds">
                             <a href="#modal-03" class="overlay">
@@ -463,10 +673,10 @@
                                 </div>
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- /folio-item -->
 
-                    <div class="bgrid folio-item">
+                    <!-- <div class="bgrid folio-item">
                         <div class="item-wrap">
                             <img src="images/portfolio/beetle.jpg" alt="Beetle">
                             <a href="#modal-04" class="overlay">
@@ -480,10 +690,10 @@
                                 </div>
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- /folio-item -->
 
-                    <div class="bgrid folio-item">
+                    <!-- <div class="bgrid folio-item">
                         <div class="item-wrap">
                             <img src="images/portfolio/lighthouse.jpg" alt="Lighthouse">
                             <a href="#modal-05" class="overlay">
@@ -497,10 +707,10 @@
                                 </div>
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- /folio-item -->
 
-                    <div class="bgrid folio-item">
+                    <!-- <div class="bgrid folio-item">
                         <div class="item-wrap">
                             <img src="images/portfolio/salad.jpg" alt="Salad">
                             <a href="#modal-06" class="overlay">
@@ -514,12 +724,12 @@
                                 </div>
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- /folio-item -->
 
                     <!-- modal popups - begin
 	            ============================================================= -->
-                    <div id="modal-01" class="popup-modal slider mfp-hide">
+                    <!-- <div id="modal-01" class="popup-modal slider mfp-hide">
 
                         <div class="media">
                             <img src="images/portfolio/modals/m-liberty.jpg" alt="" />
@@ -537,10 +747,10 @@
                             <a href="#" class="popup-modal-dismiss">Close</a>
                         </div>
 
-                    </div>
+                    </div> -->
                     <!-- /modal-01 -->
 
-                    <div id="modal-02" class="popup-modal slider mfp-hide">
+                    <!-- <div id="modal-02" class="popup-modal slider mfp-hide">
 
                         <div class="media">
                             <img src="images/portfolio/modals/m-shutterbug.jpg" alt="" />
@@ -558,10 +768,10 @@
                             <a href="#" class="popup-modal-dismiss">Close</a>
                         </div>
 
-                    </div>
+                    </div> -->
                     <!-- /modal-02 -->
 
-                    <div id="modal-03" class="popup-modal slider mfp-hide">
+                    <!-- <div id="modal-03" class="popup-modal slider mfp-hide">
 
                         <div class="media">
                             <img src="images/portfolio/modals/m-clouds.jpg" alt="" />
@@ -579,10 +789,10 @@
                             <a href="#" class="popup-modal-dismiss">Close</a>
                         </div>
 
-                    </div>
+                    </div> -->
                     <!-- /modal-03 -->
 
-                    <div id="modal-04" class="popup-modal slider mfp-hide">
+                    <!-- <div id="modal-04" class="popup-modal slider mfp-hide">
 
                         <div class="media">
                             <img src="images/portfolio/modals/m-beetle.jpg" alt="" />
@@ -600,10 +810,10 @@
                             <a href="#" class="popup-modal-dismiss">Close</a>
                         </div>
 
-                    </div>
+                    </div> -->
                     <!-- /modal-04 -->
 
-                    <div id="modal-05" class="popup-modal slider mfp-hide">
+                    <!-- <div id="modal-05" class="popup-modal slider mfp-hide">
 
                         <div class="media">
                             <img src="images/portfolio/modals/m-lighthouse.jpg" alt="" />
@@ -621,10 +831,10 @@
                             <a href="#" class="popup-modal-dismiss">Close</a>
                         </div>
 
-                    </div>
+                    </div> -->
                     <!-- /modal-05 -->
 
-                    <div id="modal-06" class="popup-modal slider mfp-hide">
+                    <!-- <div id="modal-06" class="popup-modal slider mfp-hide">
 
                         <div class="media">
                             <img src="images/portfolio/modals/m-salad.jpg" alt="" />
@@ -642,51 +852,51 @@
                             <a href="#" class="popup-modal-dismiss">Close</a>
                         </div>
 
-                    </div>
+                    </div> -->
                     <!-- /modal-06 -->
 
 
                     <!-- modal popups - end
 	            ============================================================= -->
 
-                </div>
+                <!-- </div> -->
                 <!-- /portfolio-wrapper -->
 
-            </div>
+            <!-- </div> -->
             <!-- /twelve -->
 
-        </div>
+        <!-- </div> -->
         <!-- /portfolio-content -->
 
-    </section>
+    <!-- </section> -->
     <!-- /portfolio -->
 
 
     <!-- CTA Section
    ================================================== -->
-    <section id="cta" class="grey-section">
+    <!-- <section id="cta" class="grey-section"> -->
 
-        <div class="row cta-content">
+        <!-- <div class="row cta-content"> -->
 
-            <div class="col-twelve section-ads">
+            <!-- <div class="col-twelve section-ads"> -->
 
-                <h2 class="h01"><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Styleshout Recommends Dreamhost.</a></h2>
+                <!-- <h2 class="h01"><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Styleshout Recommends Dreamhost.</a></h2> -->
 
-                <p class="lead">
-                    Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>. Get <span>$50 off</span> when you sign up with the promocode <span>styleshout</span>.
+                <!-- <p class="lead"> -->
+                    <!-- Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>. Get <span>$50 off</span> when you sign up with the promocode <span>styleshout</span>. -->
                     <!-- Simply type	the promocode in the box labeled “Promo Code” when placing your order. -->
-                </p>
+                <!-- </p> -->
 
-                <div class="action">
-                    <a class="button button-primary large" href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Sign Up Now</a>
-                </div>
+                <!-- <div class="action"> -->
+                    <!-- <a class="button button-primary large" href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Sign Up Now</a> -->
+                <!-- </div> -->
 
-            </div>
+            <!-- </div> -->
 
-        </div>
+        <!-- </div> -->
         <!-- /cta-content -->
 
-    </section>
+    <!-- </section> -->
     <!-- /cta -->
 
 
@@ -1063,7 +1273,7 @@
     </section>
     <!-- /contact -->
 
-
+</div>
     <!-- footer
    ================================================== -->
 
@@ -1084,8 +1294,8 @@
 
             <div class="col-six tab-full">
                 <div class="copyright">
-                    <span>© Copyright santosh 2022.</span>
-                    <span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>
+                    <span>© Copyright Santosh 2022.</span>
+                    <!-- <span>Design by <a href="http://www.styleshout.com/">styleshout</a></span> -->
                 </div>
             </div>
 
@@ -1106,6 +1316,107 @@
     <script src="js/jquery-2.1.3.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+        const scrambledContent = document.getElementById('scrambledContent');
+        const decodeButton = document.getElementById('decodeButton');
+        let isScrambled = true;
+
+        // Function to scramble the content
+        function scrambleContent(element) {
+            const textNodes = [];
+            const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT, null, false);
+            let currentNode;
+
+            while (currentNode = walker.nextNode()) {
+                textNodes.push(currentNode);
+            }
+
+            textNodes.forEach(node => {
+                const text = node.textContent;
+                const scrambledText = scrambleText(text);
+                node.textContent = scrambledText;
+            });
+        }
+
+        // Function to unscramble the content
+        function unscrambleContent(element) {
+            const textNodes = [];
+            const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT, null, false);
+            let currentNode;
+
+            while (currentNode = walker.nextNode()) {
+                textNodes.push(currentNode);
+            }
+
+            textNodes.forEach(node => {
+                const text = node.textContent;
+                const unscrambledText = unscrambleText(text);
+                node.textContent = unscrambledText;
+            });
+        }
+
+        // Function to scramble text (you can implement your own algorithm here)
+        function scrambleText(text) {
+            // This is a simple example; you can create a more complex scrambling algorithm
+            return text.split('').reverse().join('');
+        }
+
+        // Function to unscramble text (reverse of the scramble function)
+        function unscrambleText(text) {
+            return text.split('').reverse().join('');
+        }
+
+        // Initial state (scrambled)
+        scrambleContent(scrambledContent);
+
+        // Event listener for the decode button
+        decodeButton.addEventListener('click', function () {
+            if (isScrambled) {
+                // Unscramble the content
+                unscrambleContent(scrambledContent);
+                decodeButton.textContent = "Encode My Profile";
+            } else {
+                // Rescramble the content
+                scrambleContent(scrambledContent);
+                decodeButton.textContent = "Decode My Profile";
+            }
+            isScrambled = !isScrambled;
+        });
+    </script>
+
+<script>
+    // Array of greetings in different languages
+    const greetings = [
+        "Hello",
+        "Bonjour",
+        "¡Hola",
+        "Ciao",
+        "Hallo",
+        "नमस्ते",
+        "こんにちは",
+        "Olá",
+        "Hallo",
+        "Merhaba"
+    ];
+
+    // Function to select and display a random greeting with animation
+    function displayRandomGreeting() {
+        const greetingElement = document.getElementById('greeting');
+        greetingElement.style.animation = 'none'; // Reset the animation
+        setTimeout(() => {
+            const randomIndex = Math.floor(Math.random() * greetings.length);
+            const randomGreeting = greetings[randomIndex];
+            greetingElement.style.display = 'block';
+            greetingElement.textContent = randomGreeting;
+            greetingElement.style.animation = 'fadeIn 2s ease-in-out';
+        }, 100); // Add a short delay to reset the animation
+    }
+
+    // Display a random greeting initially and then at regular intervals
+    displayRandomGreeting();
+    setInterval(displayRandomGreeting, 5000); // Change greeting every 5 seconds
+</script>
 
 </body>
 
