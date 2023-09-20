@@ -46,7 +46,7 @@
                 <a class="menu-toggle" href="#"><span>Menu</span></a>
 
                 <div class="logo">
-                    <a href="index.html">santosh</a22		      </div>		      
+                    <a href="index.html">santosh</a>		      </div>		      
 
 		   	<!-- <nav id="main-nav-wrap">
 					<ul class="main-navigation">
@@ -78,12 +78,14 @@
 
                 <div class="col-twelve">
 
-                    <h5>Hello, World.</h5>
-                    <h1>I'm Santosh Shresth.</h1>
+                    <h5>Unlocking Possibilities through Backend Expertise</h5>
+                    <h1 id="typewriter">I'm Santosh Shrestha</h1>
 
                     <p class="intro-position">
-                        <span>Back-end Developer</span>
+                        <span>Backend Developer</span>
                         <span>SEO Analyst</span>
+                        <span>Digital Marketer</span>
+
                     </p>
 
                     <a class="button stroke smoothscroll" href="#" onclick="window.location='about.html';" title="">More About Me</a>
@@ -96,10 +98,10 @@
 
         <ul class="intro-social">
             <li><a href="https://www.facebook.com/sarik.sth/"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-behance"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://github.com/sariksth7"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/santosh-shrestha-6ba5a5138/"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/_sthsanto_/"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="mailto:sariksth7@live.com"><i class="fa fa-envelope"></i></a></li>
         </ul>
         <!-- /intro-social -->
 
@@ -121,5 +123,31 @@
     <script src="js/main.js"></script>
 
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    // Get the element with the typewriter effect
+    const typewriter = document.getElementById("typewriter");
+
+    // Set the text you want to display
+    const text = "I'm Santosh Shrestha";
+
+    // Replace the text in the element
+    typewriter.textContent = "";
+
+    // Type out the text with a delay
+    let i = 0;
+    function type() {
+        if (i < text.length) {
+            typewriter.textContent += text.charAt(i);
+            i++;
+            setTimeout(type, 100); // Adjust the typing speed by changing the timeout value
+        }
+    }
+
+    // Start the typewriter effect
+    type();
+});
+
+</script>
 
 </html>
